@@ -27,7 +27,7 @@ module Api
       end
 
       def update
-        if @task.update(task_params)
+        if @task.update(title:params[:title])
           render json: { status: 'SUCCESS', message: 'Updated the task', data: @task }
         else
           render json: { status: 'SUCCESS', message: 'Not updated', data: @task.errors }
