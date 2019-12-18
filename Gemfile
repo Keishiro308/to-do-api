@@ -51,3 +51,4 @@ group :development, :test do
 end
 
 gem 'rspec-rails'
+gem 'rack-cors'
