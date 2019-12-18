@@ -36,7 +36,7 @@ module Todo
         origins 'http://localhost:3000'
         resource '*',
         :headers => :any,
-        :methods => [:get, :post, :patch, :delete, :update]
+        :methods => [:get, :post, :patch, :delete, :update, :put]
       end
     end
   end
