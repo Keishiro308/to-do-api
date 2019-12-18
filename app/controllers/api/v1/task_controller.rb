@@ -13,7 +13,7 @@ module Api
       end
 
       def create
-        task = Task.new(task_params)
+        task = Task.new(title:params[:title])
         if task.save
           render json: { status: 'SUCCESS', data: task }
         else
